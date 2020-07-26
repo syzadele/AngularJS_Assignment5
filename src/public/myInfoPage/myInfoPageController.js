@@ -11,7 +11,7 @@ function MyInfoPageController (MenuService) {
   var ctrl = this;
   ctrl.subscribInfo = MenuService.subscribInfo;
   ctrl.isSigneUp = false;
-  if (ctrl.subscribInfo != undefined && ctrl.subscribInfo != {}) {
+  if (ctrl.subscribInfo != undefined && ctrl.subscribInfo.firstName != undefined) {
     ctrl.isSigneUp = true;
   }
 
