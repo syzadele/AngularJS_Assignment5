@@ -1,0 +1,18 @@
+<div class="container">
+  <h1>Registered information</h1>
+  <div ng-if="!myInfoPageCtrl.isSigneUp">
+    <p>Not Signed Up Yet. <a ui-sref="public.signeUpPage">Sign up Now!</a></p>
+  </div>
+  <div ng-if="myInfoPageCtrl.isSigneUp">
+    <p>First name : {{myInfoPageCtrl.subscribInfo.firstName}}</p>
+    <p>Last name : {{myInfoPageCtrl.subscribInfo.lastName}}</p>
+    <p>Email name : {{myInfoPageCtrl.subscribInfo.email}}</p>
+    <p>Phone number : {{myInfoPageCtrl.subscribInfo.phoneNumber}}</p>
+    <div>
+      <h3>Favorite dish</h3>
+      <h5>{{myInfoPageCtrl.subscribInfo.favoriteDish.name}}</h5>
+      <img class="img-responsive" width="250" height="150" ng-src="https://syzadele-course5.herokuapp.com/images/{{myInfoPageCtrl.subscribInfo.favoriteDish.short_name}}.jpg" alt="{{myInfoPageCtrl.subscribInfo.favoriteDish.name}}">
+      <p>{{myInfoPageCtrl.subscribInfo.favoriteDish.description}}</p>
+    </div>
+  </div>
+</div>

@@ -40,6 +40,20 @@ function routeConfig ($stateProvider) {
           return MenuService.getMenuItems($stateParams.category);
         }]
       }
+    })
+    .state('public.signeUpPage', {
+      url:'/signeUpPage',
+      templateUrl : 'src/public/signeUpPage/signeUpPage.html',
+      controller:'signeUpPageController',
+      controllerAs:'signeUpCtrl'
+    })
+    .state('public.myInfoPage', {
+      url:'/myInfoPage',
+      templateUrl : 'src/public/myInfoPage/myInfoPage.html',
+      controller:'myInfoPageController',
+      controllerAs:'myInfoPageCtrl'
     });
+
+
 }
 })();

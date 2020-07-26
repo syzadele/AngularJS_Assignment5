@@ -27,6 +27,16 @@ function MenuService($http, ApiPath) {
     });
   };
 
+  service.getMyMenuItems = function (shortName) {
+    return $http.get("https://syzadele-course5.herokuapp.com/menu_items/" + shortName + ".json").then(function (response){
+      return response;
+    });
+
+
+  };
+
+
+
 }
 
 
