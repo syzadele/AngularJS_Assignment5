@@ -15,7 +15,6 @@ function SigneUpPageController (MenuService) {
   ctrl.menuItem = [];
   ctrl.isSubmit = false;
   ctrl.hasResponse = false;
-  MenuService.subscribInfo = {};
 
   ctrl.setIsNotSubmit = function() {
     ctrl.isSubmit = false;
