@@ -50,7 +50,7 @@ function routeConfig ($stateProvider) {
     .state('public.myInfoPage', {
       url:'/myInfoPage',
       templateUrl : 'src/public/myInfoPage/myInfoPage.html',
-      controller:'myInfoPageController',
+      controller:'MyInfoPageController',
       controllerAs:'myInfoPageCtrl'
     });
 

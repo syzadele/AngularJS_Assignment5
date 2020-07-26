@@ -2,7 +2,7 @@
 'use strict';
 
 angular.module('public')
-.controller('myInfoPageController', MyInfoPageController);
+.controller('MyInfoPageController', MyInfoPageController);
 
 
 MyInfoPageController.$inject=['MenuService'];
