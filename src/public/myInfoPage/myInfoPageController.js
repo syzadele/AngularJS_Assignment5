@@ -8,13 +8,14 @@ angular.module('public')
 MyInfoPageController.$inject=['MenuService'];
 
 function MyInfoPageController (MenuService) {
-  this.subscribInfo = MenuService.subscribInfo;
-  this.isSigneUp = false;
-  if (this.subscribInfo != undefined && this.subscribInfo != {}) {
-    this.isSigneUp = true;
+  var ctrl = this;
+  ctrl.subscribInfo = MenuService.subscribInfo;
+  ctrl.isSigneUp = false;
+  if (ctrl.subscribInfo != undefined && ctrl.subscribInfo != {}) {
+    ctrl.isSigneUp = true;
   }
 
-  console.log("this.subscribInfo : " + JSON.stringify(this.subscribInfo));
+  console.log("ctrl.subscribInfo : " + JSON.stringify(ctrl.subscribInfo));
 }
 
 
